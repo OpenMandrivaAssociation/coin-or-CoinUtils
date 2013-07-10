@@ -1,0 +1,12 @@
+diff -up CoinUtils-2.8.7/CoinUtils/Makefile.in.orig CoinUtils-2.8.7/CoinUtils/Makefile.in
+--- CoinUtils-2.8.7/CoinUtils/Makefile.in.orig	2012-09-26 21:23:04.672445373 -0300
++++ CoinUtils-2.8.7/CoinUtils/Makefile.in	2012-09-26 21:23:41.367453620 -0300
+@@ -832,7 +832,7 @@ uninstall-local: uninstall-doc
+ 
+ install-data-hook:
+ 	@$(mkdir_p) "$(addlibsdir)"
+-@COIN_HAS_PKGCONFIG_TRUE@	PKG_CONFIG_PATH=@COIN_PKG_CONFIG_PATH@ \
++@COIN_HAS_PKGCONFIG_TRUE@	PKG_CONFIG_PATH=$(DESTDIR)$(pkgconfiglibdir) \
+ @COIN_HAS_PKGCONFIG_TRUE@	$(PKG_CONFIG) --libs coinutils > $(addlibsdir)/coinutils_addlibs.txt
+ @COIN_CXX_IS_CL_TRUE@@COIN_HAS_PKGCONFIG_FALSE@	echo "-libpath:`$(CYGPATH_W) @abs_lib_dir@` libCoinUtils.lib @COINUTILSLIB_LIBS_INSTALLED@" > $(addlibsdir)/coinutils_addlibs.txt
+ @COIN_CXX_IS_CL_FALSE@@COIN_HAS_PKGCONFIG_FALSE@	echo -L@abs_lib_dir@ -lCoinUtils @COINUTILSLIB_LIBS_INSTALLED@ > $(addlibsdir)/coinutils_addlibs.txt

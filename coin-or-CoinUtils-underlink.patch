@@ -1,0 +1,12 @@
+diff -up CoinUtils-2.9.0/CoinUtils/src/Makefile.in.orig CoinUtils-2.9.0/CoinUtils/src/Makefile.in
+--- CoinUtils-2.9.0/CoinUtils/src/Makefile.in.orig	2013-04-14 14:16:08.567430805 -0300
++++ CoinUtils-2.9.0/CoinUtils/src/Makefile.in	2013-04-14 14:16:52.468432486 -0300
+@@ -64,7 +64,7 @@ am__strip_dir = `echo $$p | sed -e 's|^.
+ am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(includecoindir)"
+ libLTLIBRARIES_INSTALL = $(INSTALL)
+ LTLIBRARIES = $(lib_LTLIBRARIES)
+-libCoinUtils_la_LIBADD =
++libCoinUtils_la_LIBADD = -lbz2 -lz
+ am_libCoinUtils_la_OBJECTS = CoinAlloc.lo CoinBuild.lo \
+ 	CoinDenseVector.lo CoinError.lo CoinFactorization1.lo \
+ 	CoinFactorization2.lo CoinFactorization3.lo \
