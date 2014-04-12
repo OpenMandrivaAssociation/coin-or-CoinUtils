@@ -1,0 +1,12 @@
+diff -up CoinUtils-2.9.7/src/CoinMessageHandler.cpp.orig CoinUtils-2.9.7/src/CoinMessageHandler.cpp
+--- CoinUtils-2.9.7/src/CoinMessageHandler.cpp.orig	2013-12-16 12:50:16.715397458 -0200
++++ CoinUtils-2.9.7/src/CoinMessageHandler.cpp	2013-12-16 12:50:41.994398426 -0200
+@@ -820,7 +820,7 @@ CoinMessageHandler::operator<< (double d
+ 	  sprintf(messageOut_,g_format_,doublevalue);
+ 	  if (next != format_+2) {
+ 	    messageOut_+=strlen(messageOut_);
+-	    sprintf(messageOut_,format_+2);
++	    sprintf(messageOut_,"%s",format_+2);
+ 	  }
+ 	}
+ 	messageOut_+=strlen(messageOut_);
