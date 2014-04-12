@@ -1,6 +1,6 @@
-diff -up CoinUtils-2.9.0/CoinUtils/src/Makefile.in.orig CoinUtils-2.9.0/CoinUtils/src/Makefile.in
---- CoinUtils-2.9.0/CoinUtils/src/Makefile.in.orig	2013-04-14 14:16:08.567430805 -0300
-+++ CoinUtils-2.9.0/CoinUtils/src/Makefile.in	2013-04-14 14:16:52.468432486 -0300
+diff -up CoinUtils-2.9.7/src/Makefile.in.orig CoinUtils-2.9.7/src/Makefile.in
+--- CoinUtils-2.9.7/src/Makefile.in.orig	2013-11-01 12:33:35.313489219 -0200
++++ CoinUtils-2.9.7/src/Makefile.in	2013-11-01 12:33:54.010489935 -0200
 @@ -64,7 +64,7 @@ am__strip_dir = `echo $$p | sed -e 's|^.
  am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(includecoindir)"
  libLTLIBRARIES_INSTALL = $(INSTALL)

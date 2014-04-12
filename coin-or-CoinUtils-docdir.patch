@@ -1,12 +1,12 @@
-diff -up CoinUtils-2.8.7/CoinUtils/Makefile.in.orig CoinUtils-2.8.7/CoinUtils/Makefile.in
---- CoinUtils-2.8.7/CoinUtils/Makefile.in.orig	2012-09-27 21:20:53.187931622 -0300
-+++ CoinUtils-2.8.7/CoinUtils/Makefile.in	2012-09-27 21:20:57.280932710 -0300
+diff -up CoinUtils-2.9.7/Makefile.in.orig CoinUtils-2.9.7/Makefile.in
+--- CoinUtils-2.9.7/Makefile.in.orig	2013-11-01 12:32:02.953485683 -0200
++++ CoinUtils-2.9.7/Makefile.in	2013-11-01 12:32:37.098486990 -0200
 @@ -336,7 +336,7 @@ EXTRA_DIST = $(am__append_2)
  ########################################################################
  pkgconfiglibdir = $(libdir)/pkgconfig
  pkgconfiglib_DATA = coinutils.pc
 -addlibsdir = $(DESTDIR)$(datadir)/coin/doc/CoinUtils
-+addlibsdir = $(DESTDIR)$(datadir)/doc/coin-or-$(PACKAGE_NAME)-$(PACKAGE_VERSION)
++addlibsdir = $(DESTDIR)$(datadir)/doc/coin-or-$(PACKAGE_NAME)
  
  ########################################################################
  #                         Maintainer Stuff                             #
@@ -15,7 +15,7 @@ diff -up CoinUtils-2.8.7/CoinUtils/Makefile.in.orig CoinUtils-2.8.7/CoinUtils/Ma
  DISTCLEANFILES = $(am__append_3) $(VPATH_DISTCLEANFILES)
  DocFiles = README AUTHORS LICENSE
 -DocInstallDir = $(datadir)/coin/doc/$(PACKAGE_NAME)
-+DocInstallDir = $(datadir)/doc/coin-or-$(PACKAGE_NAME)-$(PACKAGE_VERSION)
++DocInstallDir = $(datadir)/doc/coin-or-$(PACKAGE_NAME)
  all: all-recursive
  
  .SUFFIXES:
