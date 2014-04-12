@@ -9,6 +9,7 @@ Release:	3%{?dist}
 License:	EPL
 URL:		http://projects.coin-or.org/%{module}
 Source0:	http://www.coin-or.org/download/pkgsource/%{module}/%{module}-%{version}.tgz
+Source1:	%{name}.rpmlintrc
 BuildRequires:	bzip2-devel
 BuildRequires:	coin-or-Sample
 BuildRequires:	doxygen
